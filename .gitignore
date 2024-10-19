@@ -1,0 +1,202 @@
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs and system files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.stackdump
+
+# Runtime files
+*.pid
+*.seed
+*.pid.lock
+
+# Directory-based OS files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Node.js
+node_modules/
+dist/
+build/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyd
+.Python
+*.coverage
+.cache
+.pytest_cache/
+.mypy_cache/
+.tox/
+.eggs/
+*.egg-info/
+pip-log.txt
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.class
+*.log
+target/
+out/
+*.iml
+*.ipr
+*.iws
+
+# C/C++
+*.o
+*.obj
+*.so
+*.exe
+*.dll
+*.out
+*.a
+*.dylib
+
+# macOS
+*.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+
+# PHP
+vendor/
+composer.lock
+composer.phar
+
+# JavaScript / TypeScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+coverage/
+lib-cov/
+dist/
+tmp/
+out-tsc/
+*.tsbuildinfo
+*.d.ts
+
+# Ruby
+*.gem
+*.rbc
+.rspec
+.rvmrc
+.yardoc
+.yarn-integrity
+
+# Laravel
+/vendor
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/.idea
+/.vscode
+/.phpunit.result.cache
+/storage/logs/*.log
+.env.*
+
+# React Native
+.expo/
+.expo-shared/
+*.expo
+
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+*.csproj
+*.unityproj
+*.pidb
+*.sln
+
+# Docker
+*.env
+.dockerignore
+Dockerfile
+docker-compose*.yml
+
+# Other IDEs
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+.tern-port
+
+# General backups and temporary files
+*.bak
+*.swp
+*~
+*.tmp
+*.tmp.*
+*.orig
+*.old
+*.rej
+*.swo
+*.kate-swp
+*#
+
+# Generated files
+*.min.js
+*.min.css
+*.map
+*.woff
+*.woff2
+*.ttf
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.tgz
+*.gz
+*.bz2
+*.xz
+*.lzma
+
+# Microsoft Office
+*.docx
+*.xlsx
+*.pptx
+
+# Apple files
+*.numbers
+*.pages
+*.key
+
+# Miscellaneous
+coverage/
+*.sass-cache
