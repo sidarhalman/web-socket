@@ -4,18 +4,25 @@ import io from "socket.io-client";
 import Input from './components/Input';
 
 function App() { 
-  
+  const [score, setScore] = useState({})
   const socket = io("localhost:3000");
   
   function connectSocket(){
     socket.on('connection', (socket)=>{
-      console.log(socket)
+      console.log(socket, "client")
     });
   };
   function handleInput(event){
     let { name, value} = event.target
-    console.log({[name]:value })
+    const currentObj = { [name] :value };
+    setScore((prev) =>({...prev, ...currentObj}))
   }
+
+  function sendScore() {
+    console.log(score)
+    socket.emit("scores", score)
+  };  
+  console.log(score)
 
   useEffect(()=>{
     connectSocket();
@@ -25,7 +32,8 @@ function App() {
     <>
       <h1>React Multiplayer Dashboard</h1>
       <Input name="name" placeholder="Name" handleInput={handleInput}></Input>
-      <Input name="score" placeholder="score" handleInput={handleInput}></Input>
+      <Input name="score" placeholder="Score" handleInput={handleInput}></Input>
+      <button onClick={()=>{sendScore()}}>Send</button>
     </>
   )
 }
